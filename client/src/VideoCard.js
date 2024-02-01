@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player'
 const VideoCard = ({ allMyVideos, setAllMyVideos }) => {
 
     const handleDelete = (id) => {
-        fetch(`http://ec2-13-42-39-111.eu-west-2.compute.amazonaws.com/videos/${id}`, {
+        fetch(`https://video-recomendations-014d.onrender.com/videos/${id}`, {
             method: "DELETE"
         })
             .then((res) => {
