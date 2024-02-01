@@ -7,7 +7,7 @@
     "dev": "nodemon server.js",
     "server": "node server.js",
     "start": "nodemon node server.js",
-    "build": "npm run build",
+    "build": "react-scripts build",
     "migrate": "knex migrate:latest"
   },
   "keywords": [],
