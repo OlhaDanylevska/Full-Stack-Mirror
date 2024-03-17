@@ -1,8 +1,9 @@
 import { useState } from "react"
 import VideoCard from "./VideoCard"
+import loadingIMG from "./load.gif"
+import AddVideoButton from "./AddVideoButton"
 
-
-const CardHolder = ({ allMyVideos, setAllMyVideos }) => {
+const CardHolder = ({ allMyVideos, setAllMyVideos, loading, cardHolderRef }) => {
     const [sorting, setSorting] = useState("asc")
 
     const handleSortingButton = () => {
@@ -22,7 +23,9 @@ const CardHolder = ({ allMyVideos, setAllMyVideos }) => {
     }
 
     return (
-        <div>
+        <div ref={cardHolderRef}>
+            <h4 style={{ fontWeight: "200", color: "gray", marginBottom: "2rem", fontSize: "2rem" }}>Add you favorite video</h4>
+            <AddVideoButton setAllMyVideos={setAllMyVideos} />
             <div className="sorting-holder">
                 Sort
                 <button className="sorting-ratings-button" onClick={handleSortingButton}>
@@ -31,10 +34,16 @@ const CardHolder = ({ allMyVideos, setAllMyVideos }) => {
                 </button>
             </div>
             <div className="cards-holder">
-                <VideoCard allMyVideos={allMyVideos} setAllMyVideos={setAllMyVideos} />
-            </div>
-            <div style={{ height: "60px", width: "100%", color: "white" }}>
-                ©Olha Danylevska
+                {loading ?
+                    <div>
+                        <img src={loadingIMG} style={{ width: "3rem", }}></img>
+                        <br />
+                        <br />
+                        <p style={{ fontSize: "1.3rem", color: "rgb(211, 211, 211)" }}>It might take a little bit of time to load our service for you. <br />Thanks for your patience.</p>
+                    </div>
+                    :
+                    <VideoCard allMyVideos={allMyVideos} setAllMyVideos={setAllMyVideos} />}
+
             </div>
         </div>
 
