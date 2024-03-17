@@ -36,7 +36,7 @@ const CardHolder = ({ allMyVideos, setAllMyVideos, loading, cardHolderRef }) => 
             <div className="cards-holder">
                 {loading ?
                     <div>
-                        <img src={loadingIMG} style={{ width: "3rem", }}></img>
+                        <img src={loadingIMG} style={{ width: "3rem", }} alt="loading animation"></img>
                         <br />
                         <br />
                         <p style={{ fontSize: "1.3rem", color: "rgb(211, 211, 211)" }}>It might take a little bit of time to load our service for you. <br />Thanks for your patience.</p>
