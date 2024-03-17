@@ -3,7 +3,8 @@
 }
 
 .background {
-  background: linear-gradient(336deg, rgba(34, 12, 73, 1) 0%, rgba(6, 0, 17, 1) 100%);
+  background: rgb(0, 64, 129);
+  background: linear-gradient(336deg, rgb(0, 20, 39) 15%, rgb(0, 80, 117) 100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +61,7 @@
   padding: 0.3rem 0.8rem 0.3rem 0.8rem;
   border: 1px solid white;
   color: white;
-  background-color: rgb(225, 51, 51, 80%);
+  background-color: rgba(141, 45, 45, 0.8);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -77,7 +78,7 @@ h4 {
 .up,
 .down {
   border: none;
-  background-color: rgb(48, 13, 81, 60%);
+  background-color: rgba(13, 38, 81, 0.6);
   height: 2rem;
   margin-top: 0.5rem;
   color: white;
@@ -129,7 +130,6 @@ h4 {
 form {
   width: 100%;
   min-height: 6rem;
-  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -141,10 +141,10 @@ form {
 
 .form-holder input {
   width: 20rem;
-  height: 2.5rem;
+  height: 3rem;
   margin-right: 1rem;
   border-radius: 2rem;
-  border: rgb(157, 139, 184) solid 1px;
+  border: rgb(139, 174, 184) solid 1px;
   background-color: rgb(255, 255, 255, 20%);
   padding-left: 1rem;
   padding-right: 1rem;
@@ -154,11 +154,11 @@ form {
 .form-holder ::placeholder {
   color: rgb(255, 255, 255, 60%);
   padding-left: 1rem;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .form-holder input:hover {
-  background-color: rgb(255, 255, 255, 50%);
+  background-color: rgba(255, 255, 255, 0.545);
 }
 
 .form-holder input:focus {
@@ -169,19 +169,19 @@ form {
 }
 
 .form-holder button {
-  width: 10rem;
-  height: 2.5rem;
+  width: 12rem;
+  height: 3rem;
   border-radius: 2rem;
-  border: rgb(255, 255, 255, 60%) solid 1px;
+  border: rgb(255, 255, 255, 60%) solid 2px;
   color: white;
-  background: rgb(69, 48, 105);
-  background: linear-gradient(336deg, rgba(69, 48, 105, 1) 15%, rgba(132, 105, 181, 1) 100%);
+  background: rgb(0, 64, 129);
+  background: linear-gradient(336deg, rgb(8, 59, 137) 15%, rgb(1, 123, 229) 100%);
   box-shadow: rgba(0, 0, 0, 50%) 0px 3px 8px;
 }
 
 .form-holder button:hover {
-  background: rgb(118, 92, 163);
-  background: linear-gradient(336deg, rgba(118, 92, 163, 1) 15%, rgba(193, 152, 226, 1) 100%);
+  background: rgb(0, 64, 129);
+  background: linear-gradient(336deg, rgb(4, 33, 78) 15%, rgb(0, 63, 118) 100%);
 }
 
 h3 {
@@ -192,13 +192,13 @@ h3 {
 
 .main-button-to-add {
   margin-bottom: 1.5rem;
-  width: 10rem;
-  height: 2.5rem;
+  width: 12rem;
+  height: 3rem;
   border-radius: 2rem;
-  border: rgb(255, 255, 255, 60%) solid 1px;
+  border: rgba(254, 249, 249, 0.708) solid 2px;
   color: white;
-  background: rgb(69, 48, 105);
-  background: linear-gradient(336deg, rgba(69, 48, 105, 1) 15%, rgba(132, 105, 181, 1) 100%);
+  background: rgb(0, 48, 125);
+  background: linear-gradient(336deg, rgb(8, 59, 137) 15%, rgb(1, 123, 229) 100%);
   box-shadow: rgba(0, 0, 0, 50%) 0px 3px 8px;
 }
 
@@ -207,8 +207,8 @@ h3 {
 }
 
 .main-button-to-add:hover {
-  width: 10.2rem;
-  height: 2.6rem;
+  width: 12.4rem;
+  height: 3rem;
 }
 
 h1 {

@@ -53,7 +53,6 @@ const AddingVideo = ({ setAllMyVideos }) => {
 
     return (
         <div className="form-holder">
-            <h3>Add Your Favorite Video</h3>
             <p style={{ color: "red" }}>{errorMessage}</p>
             <form onSubmit={handleAddButton}>
                 <input
