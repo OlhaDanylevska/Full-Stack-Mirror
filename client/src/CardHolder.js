@@ -3,7 +3,7 @@ import VideoCard from "./VideoCard"
 import loadingIMG from "./load.gif"
 import AddVideoButton from "./AddVideoButton"
 
-const CardHolder = ({ allMyVideos, setAllMyVideos, loading, cardHolderRef }) => {
+const CardHolder = ({ allMyVideos, setRating, setAllMyVideos, loading, cardHolderRef }) => {
     const [sorting, setSorting] = useState("asc")
 
     const handleSortingButton = () => {
@@ -42,7 +42,7 @@ const CardHolder = ({ allMyVideos, setAllMyVideos, loading, cardHolderRef }) => 
                         <p style={{ fontSize: "1.3rem", color: "rgb(211, 211, 211)" }}>It might take a little bit of time to load our service for you. <br />Thanks for your patience.</p>
                     </div>
                     :
-                    <VideoCard allMyVideos={allMyVideos} setAllMyVideos={setAllMyVideos} />}
+                    <VideoCard setRating={setRating} allMyVideos={allMyVideos} setAllMyVideos={setAllMyVideos} />}
 
             </div>
         </div>

@@ -11,6 +11,7 @@ function App() {
   const [allMyVideos, setAllMyVideos] = useState([])
   const [loading, setLoading] = useState(true)
   const cardHolderRef = useRef(null);
+  const [rating, setRating] = useState(0)
 
   useEffect(() => {
     fetch("https://video-recomendations-014d.onrender.com/videos")
@@ -21,7 +22,7 @@ function App() {
         setAllMyVideos(data)
         setLoading(false)
       })
-  }, [])
+  }, [rating])
   return (
     <div className="App">
       <div className="background"></div>
@@ -29,7 +30,7 @@ function App() {
         <VideoPlayer cardHolderRef={cardHolderRef} />
       </header>
       <div style={{ width: "98%" }}>
-        <CardHolder cardHolderRef={cardHolderRef} allMyVideos={allMyVideos} loading={loading} setLoading={setLoading} setAllMyVideos={setAllMyVideos} />
+        <CardHolder rating={rating} setRating={setRating} cardHolderRef={cardHolderRef} allMyVideos={allMyVideos} loading={loading} setLoading={setLoading} setAllMyVideos={setAllMyVideos} />
       </div>
       <Footer />
     </div>
