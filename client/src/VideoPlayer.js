@@ -32,7 +32,7 @@ const VideoPlayer = ({ cardHolderRef }) => {
     return (
         <div>
             <div style={{ zIndex: 1, position: "absolute", top: "20%", left: "10%", textShadow: "2px 2px 4px rgba(0,0,0,0.5)", color: "white", textAlign: "left" }} >
-                <h1 style={{ fontSize: "5rem", color: "white" }}>Your Personalized</h1>
+                <h1 style={{ fontSize: "5rem", color: "white" }}>Your Personalised</h1>
                 <h2 style={{ fontSize: "3.5rem", marginTop: "-1rem" }}>Video Recommendation Platform</h2>
                 <Box
                     component="button"
