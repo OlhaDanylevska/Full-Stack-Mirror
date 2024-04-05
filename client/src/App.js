@@ -26,9 +26,9 @@ function App() {
   return (
     <div className="App">
       <div className="background"></div>
-      <header className="App-header">
+      <div className="App-header">
         <VideoPlayer cardHolderRef={cardHolderRef} />
-      </header>
+      </div>
       <div style={{ width: "98%" }}>
         <CardHolder rating={rating} setRating={setRating} cardHolderRef={cardHolderRef} allMyVideos={allMyVideos} loading={loading} setLoading={setLoading} setAllMyVideos={setAllMyVideos} />
       </div>

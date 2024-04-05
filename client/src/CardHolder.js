@@ -24,7 +24,7 @@ const CardHolder = ({ allMyVideos, setRating, setAllMyVideos, loading, cardHolde
 
     return (
         <div ref={cardHolderRef}>
-            <h4 style={{ fontWeight: "200", color: "gray", marginBottom: "2rem", fontSize: "2rem" }}>Add your favorite video</h4>
+            <h4 style={{ fontWeight: "200", color: "gray", marginTop: "9rem", marginBottom: "2rem", fontSize: "2rem" }}>Add your favorite video</h4>
             <AddVideoButton setAllMyVideos={setAllMyVideos} />
             <div className="sorting-holder">
                 Sort
